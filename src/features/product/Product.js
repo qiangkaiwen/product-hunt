@@ -72,7 +72,7 @@ export function Product() {
                                   <span className={'custom-span'}>{product.comments_count}</span>
                                 </a>
                                 <span className={'custom-span custom-border-rt'}>Free</span>
-                                <a className={'a-child'} href={product.redirect_url.split('/r')[0] + '/topics/' + product.topics[0].slug}>
+                                <a className={'a-child'} href={product.discussion_url.split('?')[0]}>
                                   <span className={'custom-span'}>{product.topics[0].name}</span>
                                 </a>
                               </div>
